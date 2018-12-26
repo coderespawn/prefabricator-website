@@ -325,6 +325,15 @@ header {
     font-size: 4em;
 }
 
+
+#social {
+    padding: 20px 0;
+}
+#social .fa {
+    color: $theme-dark;
+    font-size: 4em;
+}
+
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
