@@ -1,46 +1,92 @@
+
 <aside class="bg-dark">
 	<section id="download">
       <div class="container text-center">
           <div class="download">
-              <h2>Download and start using it now!</h2>
-              <p class="text-faded">(also coming soon to the UE4 marketplace)</p>
+            <h2>Download and start using it now!</h2>
+            <p class="text-faded">(also coming soon to the UE4 marketplace)</p>
 
-			<table align="center" class="download-table">
-				<tbody>
-				<tr>
-					<td align="right"><div class="text-faded">Platform</div></td>
-					<td>
-						<div class="btn-group btn-group-toggle" data-toggle="buttons">
-						  <label class="btn btn-primary active">
-							<input type="radio" name="options" id="option1" autocomplete="off" checked>Windows
-						  </label>
-						  <label class="btn btn-primary">
-							<input type="radio" name="options" id="option2" autocomplete="off">Mac
-						  </label>
-						</div>
-					</td>
-				</tr>
-				
-				<tr>
-					<td align="right"><div class="text-faded">Engine</div></td>
-					<td>
-						<div class="btn-group btn-group-toggle" data-toggle="buttons">
-						  <label class="btn btn-primary active">
-							<input type="radio" name="options" id="option1" autocomplete="off" checked>4.21
-						  </label>
-						  <label class="btn btn-primary">
-							<input type="radio" name="options" id="option2" autocomplete="off">4.20
-						  </label>
-						  <label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off">4.19
-						  </label>
-						</div>
-					</td>
-				</tr>
-				
-			</table>
-            <a href="#" class="btn btn-default btn-xl">Download Binaries</a>
-            <a href="https://github.com/coderespawn/prefabricator-ue4" class="btn btn-default btn-xl">Github</a>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+			
+				<div class="col-lg-6 col-md-6 text-center">
+					<div class="features-box">
+						<h2 class="section-heading">Binaries</h2>
+						<hr class="light"/>
+						<table align="center" class="download-table">
+							<tbody>
+							<tr>
+								<td align="right"><div class="text-faded">Platform</div></td>
+								<td>
+									<div class="btn-group btn-group-toggle" data-toggle="buttons">
+									  <label class="btn btn-primary active">
+										<input type="radio" name="BuildPlatform" value="Win64" autocomplete="off" checked>Windows
+									  </label>
+									  <label class="btn btn-primary">
+										<input type="radio" name="BuildPlatform" value="Mac" autocomplete="off">Mac
+									  </label>
+									</div>
+								</td>
+							</tr>
+							
+							<!-- slot 1 -->
+							{% if site.build_version_slot1 %}
+							<tr>
+								<td colspan="2">
+									<a href="javascript:HandleDownload('{{site.url}}', '{{site.build_version_slot1}}');" class="btn btn-default btn-xl">
+										<i class="fa fa-download"></i>
+										Download: ver {{site.build_version_slot1}}
+									</a>
+								</td>
+							</tr>
+							{% endif %}
+							
+							<!-- slot 2 -->
+							{% if site.build_version_slot2 %}
+							<tr>
+								<td colspan="2">
+									<a href="javascript:HandleDownload('{{site.url}}', '{{site.build_version_slot2}}');" class="btn btn-default btn-xl">
+										<i class="fa fa-download"></i>
+										Download: ver {{site.build_version_slot2}}
+									</a>
+								</td>
+							</tr>
+							{% endif %}
+							
+							<!-- slot 3 -->
+							{% if site.build_version_slot3 %}
+							<tr>
+								<td colspan="2">
+									<a href="javascript:HandleDownload('{{site.url}}', '{{site.build_version_slot3}}');" class="btn btn-default btn-xl">
+										<i class="fa fa-download"></i>
+										Download: ver {{site.build_version_slot3}}
+									</a>
+								</td>
+							</tr>
+							{% endif %}
+							
+						</table>
+						
+						
+						
+					</div>
+				</div>
+			
+				<div class="col-lg-6 col-md-6 text-center">
+					<div class="features-box">
+						<h2 class="section-heading">Source Code</h2>
+						<hr class="light"/>
+						<p>
+							Grab the source code from github
+						</p>
+						<br/>
+						<a href="https://github.com/coderespawn/prefabricator-ue4" target="_blank" class="btn btn-default btn-xl">
+							<i class="fa fa-github"></i>
+							Github
+						</a>
+					</div>
+				</div>
+			</div>
+			
 			
           </div>
       </div>

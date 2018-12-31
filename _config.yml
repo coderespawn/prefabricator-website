@@ -9,5 +9,12 @@ twitter_username: coderespawn
 github_username: coderespawn
 discord_server: https://discord.gg/dRewTSU
 
+# Downloads
+build_version_slot1: 1.0.0
+build_version_slot2: 
+build_version_slot3: 
+
 # Build settings
 markdown: kramdown
+
+
