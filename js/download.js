@@ -1,8 +1,7 @@
-function HandleDownload(base_url, version) {
-	var PlatformValue = $("input[name='BuildPlatform']:checked").val();
-	if(PlatformValue){
-		var filename = "Prefabricator-UE4-" + PlatformValue + "-" + version + ".zip"
-		var url = base_url + "/builds/" + filename;
+function HandleDownload(version) {
+	var platform = $("input[name='BuildPlatform']:checked").val();
+	if(platform){
+		var url = "https://github.com/coderespawn/prefabricator-ue4/releases/download/" + version + "/Binaries-" + platform + "-Prefabricator.zip";
 		window.location = url;
 	}
 }
