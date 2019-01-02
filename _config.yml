@@ -7,7 +7,8 @@ url: "https://prefabricator.io" # the base hostname & protocol for your site
 
 twitter_username: coderespawn
 github_username: coderespawn
-discord_server: https://discord.gg/dRewTSU
+discord_server: https://discord.gg/q3suTpE
+forum_url: https://forums.unrealengine.com/community/work-in-progress/1567571-prefabricator-open-source-prefab-plugin
 
 # Downloads
 build_version_slot1: 1.0.1
