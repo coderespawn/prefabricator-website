@@ -11,8 +11,8 @@ discord_server: https://discord.gg/q3suTpE
 forum_url: https://forums.unrealengine.com/community/work-in-progress/1567571-prefabricator-open-source-prefab-plugin
 
 # Downloads
-build_version_slot1: 1.0.1
-build_version_slot2: 
+build_version_slot1: 1.0.4
+build_version_slot2: 1.0.1
 build_version_slot3: 
 
 # Build settings
